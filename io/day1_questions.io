@@ -6,6 +6,7 @@ Day1 := Object clone do(
         valid println
         invalid := try(1 + "one")
         invalid catch (Exception, writeln("io is dynamically typed."))
+        "\n" println
     )
 
     q2 := method(
@@ -13,6 +14,7 @@ Day1 := Object clone do(
         if(0, "0 is true" println, "0 is false" println)
         if("", "'' is true" println, "'' is false" println)
         if(nil, "nil is true" println, "nil is false" println)
+        "\n" println
     )
 
     q3 := method(
@@ -28,6 +30,6 @@ Day1 := Object clone do(
     )
 )
 
+Day1 q1
+Day1 q2
 Day1 q3
-
-
